@@ -231,7 +231,7 @@ The API is the same as for [`CarSplitter`](#class-carsplitter).
 
 The root node is a `dag-cbor` node that is a tuple of the string `/carbites/1`, an array of root CIDs (only seen in first CAR) and an array of block CIDs (all the blocks in the CAR). e.g. `['/carbites/1', ['bafkroot'], ['bafy1', 'bafy2']]`.
 
-Note: The root node is limited to 4MB in size (the largest message IPFS will bitswap). Depending on the settings used to construct the DAG in the CAR, this may mean a split CAR size limit of around 30GiB.
+Note: The root node is limited to 2MiB in size (the largest message IPFS will bitswap). Depending on the settings used to construct the DAG in the CAR, this may mean a split CAR size limit of around 15GiB.
 
 ### `class RootedCarJoiner`
 
